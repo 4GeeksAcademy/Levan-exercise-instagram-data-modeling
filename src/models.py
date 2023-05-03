@@ -43,9 +43,4 @@ class FeedItem(Base):
         return {}
 
 ## Draw from SQLAlchemy base
-try:
-    result = render_er(Base, 'diagram.png')
-    print("Success! Check the diagram.png file")
-except Exception as e:
-    print("There was a problem generating the diagram")
-    raise e
+render_er(Base, 'preview.png')
